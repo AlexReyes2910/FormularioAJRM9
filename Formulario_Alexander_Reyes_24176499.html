@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<head>
+	<title>Curriculum - Vitae</title>
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<center><h1>Curriculum Vitae</h1>
+<small><b>Register of information</b></center></small><br>
+<table width="100%">
+	<tr>
+		<th bgcolor="cyan" colspan="2">Personal Information</th>
+	</tr>
+	<tr>
+		<td align="right"><label>Firts Name</label></td>
+		<td><input name="firts_name" placeholder="enter your firts name" title="enter your firts name" required="required"
+			size="50" id="num1"><br>
+			<small>Please, enter firs name  here</small>
+		</td>
+	</tr>
+	<tr>
+		<td align="right"><label>Last Name</label></td>
+		<td><input name="last_name" placeholder="enter your last name" title="enter your last name" required="required"
+			size="50" id="last_name"><br>
+			<small>Please, enter last name here</small>
+		</td>
+	</tr>
+	<tr>
+		<td align="right"><label>DNI:</label></td>
+		<td>
+		<select name="nationality" id="nationality" title="enter your nationality">
+			<option value="V" title="Venezolan@">V</option>
+			<option value="E" title="Extranjer@">E</option>
+			<option value="J" title="Juridico">J</option>
+			<option value="G" title="Gubernamental">G</option>
+		</select>
+		<input type="number" name="dni" placeholder="ejem:29349019" title="enter your D.N.I." required="required"
+			size="50" id="dni"><br>
+			<small>Please, enter DNI here</small>
+		</td>
+	</tr>
+	<tr>
+		<td align="right"><label>Phone Number:</label></td>
+		<td><input type="text" name="phone" title="enter your phone number" placeholder="ejem: +584120000000" required="required" size="50" id="phone"><br>
+		<small>Please, enter phone number here</small>
+		</td>
+	</tr>
+	<tr>
+		<td align="right"><label>Email:</label></td>
+		<td><input type="email" name="mail" title="enter your email" placeholder="coreo_nombre@gmail.com" required="required" size="50" id="email"><br>
+		<small>Please, insert email here</small>
+		</td>
+	</tr>
+	<tr>
+		<td align="right"><label>Marital Status:</label></td>
+		<td>
+			<input type="radio" name="status" title="select " value="single" id="status" checked="checked">Single
+			<input type="radio" name="status" title="select " value="married" id="status">Married
+			<input type="radio" name="status" title="select " value="widow" id="status">Widow
+			<input type="radio" name="status" title="select " value="divorcied" id="status">Divorcied
+		</td>
+	</tr>
+	<tr>
+		<td align="right"><label>Direction:</label></td>
+		<td><textarea name="direction" placeholder="City - Street - House " title="enter your direction" required="required" id="direction"></textarea><br>
+		<small>Please, insert direction here</small>
+		</td>
+	</tr>
+		<th bgcolor="cyan" colspan="2">Acedemic Study</th>
+	<tr>
+		<td align="right"><label>Institute:</label></td>
+		<td><input type="text" name="intitute" title="enter the name of institute here" placeholder="institute" required="required" size="50" id="institute"><br>
+		<small>Please, enter the name of institute here</small>
+		</td>
+	</tr>
+	<tr>
+		<td align="right"><label>Graduation Year:</label></td>
+		<td><input type="number" name="year" title="enter the yer of finalitation" placeholder="2000" required="required" size="4" id="institute" style="width: 60px;height: 15px"><br>
+		<small>Please, enter the graduation year here</small>
+		</td>
+	</tr>
+	<tr>
+		<td align="right"><label>Obtined Title:</label></td>
+		<td><select name="title" id="title" title="enter your title">
+			<option value="P" title="Primary">Primary</option>
+			<option value="H" title="HighSchool">High School</option>
+			<option value="T" title="MiddleTechnician">Middle Technician</option>
+			<option value="A" title="AdvancedTechnician">Advanced Technician</option>
+			<option value="E" title="Engineering">Engineering</option>
+			<option value="B" title="Bachelor´sDegree">Bachelor´s Degree</option>
+			<option value="D" title="Doctorate">Doctorate</option>
+			<option value="M" title="Master´s">Master´s</option>
+		</select>
+	<input tipe="text" name="mention" title="enter the mention here" placeholder="mention obtined" required="required" id="mention"><br>
+	<small>Please, enter the title and mention obtined here</small><br>
+	<input type="button" name="addstudy" id="addstudy" value="Add Study" style="background-color:#AFF014">
+	</td>
+	</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<table id="add_study">
+				</table>
+			</td>
+		</tr>
+	<tr>
+		<th bgcolor="cyan" colspan="2">Laboral Information</th>
+	</tr>
+	<tr>
+	<td align="right"><label>Courses Taken:</label></td>
+	<td>
+		<input tipe="text" name="course" title="enter the course here" placeholder="course taken" required="required" id="course">
+		<br>
+		<small>Please, enter the course taken here</small>
+	</td>
+	</tr>
+	<tr>
+		<td align="right"><label>Duration:</label></td>
+		<td>		
+		<input type="number" name="dday" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dday">Days 
+		<input type="number" name="dhour" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dhour">Hours 
+		<input type="number" name="dmin" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dmin">Minute<br>
+		<small>Please, enter the duration time here</small><br>
+		<input type="button" name="addcourse" id="addcourse" value="Add Course" style="background-color:#AFF014"></th>
+		</td>
+    </tr>
+    <tr>
+			<td colspan="2" align="center">
+				<table id="course_taken">
+				</table>
+			</td>
+		</tr>
+    <tr>
+    	<td align="right"><label>Work Experience:</label></td>
+    	<td>
+    		<input tipe="text" name="work" title="enter the work here" placeholder="work done" required="required" id="work">
+		<br>
+		<small>Please, enter the work done here</small></td>
+    </tr>
+    <tr>
+    	<td align="right"><label>Duration of employment:</label></td>
+		<td>		
+		<input type="number" name="dday" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dday">Days 
+		<input type="number" name="dhour" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dhour">Hours 
+		<input type="number" name="dmin" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dmin">Minute<br>
+		<small>Please, enter the duration time here</small><br>
+		<input type="button" name="addemplyment" id="addemployment" value="Add Employment" style="background-color:#AFF014"></td>
+    </tr>
+    <tr>
+			<td colspan="2" align="center">
+				<table id="employment">
+				</table>
+			</td>
+		</tr>
+
+	<tr>
+		<th bgcolor="cyan" colspan="2">Personal References</th>
+	</tr>
+	<tr>
+		<td align="right"><label>name and surname</label></td>
+		<td>
+			<input tipe="text" name="reference1" title="enter the name and surname here" placeholder="ejem: Zoy Paez" required="required" id="reference1">
+		</td>
+	</tr>
+	<tr>
+		<td align="right"><label>Phone Number:</label></td>
+		<td><input type="text" name="phonerefe1" title="enter your phone number" placeholder="ejem: +584120000000" required="required" size="50" id="phonerefe1"><br>
+		<input type="button" name="references" id="addreferences" value="Add References" style="background-color:#AFF014">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+				<table id="references">
+				</table>
+		</td>
+	</tr>
+</table>
+
+<center><br><br>note: all fields must be completed
+	<br><br><input type="button" title="Send" value="Send">
+</center>
+
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+	var i=1;
+	$("#addstudy").on('click',function(event){
+		$("#add_study").append('<tr id="f1'+i+'">		<td align="right"><label>Institute:</label></td>		<td><input type="text" name="intitute" title="enter the name of institute here" placeholder="institute" required="required" size="50" id="institute"><br>		<small>Please, enter the name of institute here</small>		</td>	</tr><tr id="f2'+i+'">		<td align="right"><label>Graduation Year:</label></td>		<td><input type="number" name="year" title="enter the yer of finalitation" placeholder="2000" required="required" size="4" id="institute" style="width: 60px;height: 15px"><br>		<small>Please, enter the graduation year here</small>		</td>	</tr><tr id="f3'+i+'">		<td align="right"><label>Obtined Title:</label></td>	<td><select name="title" id="title" title="enter your title">			<option value="P" title="Primary">Primary</option>			<option value="H" title="HighSchool">High School</option>			<option value="T" title="MiddleTechnician">Middle Technician</option>			<option value="A" title="AdvancedTechnician">Advanced Technician</option>			<option value="E" title="Engineering">Engineering</option>			<option value="B" title="Bachelor´sDegree">Bachelor´s Degree</option>			<option value="D" title="Doctorate">Doctorate</option>	<option value="M" title="Master´s">Master´s</option></select>	<input tipe="text" name="mention" title="enter the mention here"placeholder="mention obtined" required="required" id="mention"><br>	<small>Please, enter the title and mention obtined here</small><br>	<input type="button" name="Deletestudy"  style="background-color:red" value="Delete" onclick="eliminar_study('+i+')"></td></tr> <tr><td colspan="2"><table id="add_study"></table></td></tr>');
+		i++;
+	});
+	function eliminar_study(i){
+		var nombre_f1="#f1";
+		var num="";
+		//---
+		var num_f1=i;
+		num=num_f1.toString();
+		var f1=nombre_f1.concat(num);
+		$(""+f1+"").empty();
+
+		var nombre_f2="#f2";
+		var num="";
+		//---
+		var num_f2=i;
+		num=num_f2.toString();
+		var f2=nombre_f2.concat(num);
+		$(""+f2+"").empty();
+
+		var nombre_f3="#f3";
+		var num="";
+		//---
+		var num_f3=i;
+		num=num_f3.toString();
+		var f3=nombre_f3.concat(num);
+		$(""+f3+"").empty();
+	};
+
+</script>
+
+<script type="text/javascript">
+	var i=1;
+	$("#addcourse").on('click',function(event){
+		$("#course_taken").append('<tr id="f1'+i+'">	<td align="right"><label>Courses Taken:</label></td><td>	<input tipe="text" name="course" title="enter the course here" placeholder="course taken" required="required" id="course">	<br>		<small>Please, enter the course taken here</small>	</td>	</tr>	<tr id="f2'+i+'"><td align="right"><label>Duration:</label></td>	<td>	<input type="number" name="dday" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dday">Days <input type="number" name="dhour" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dhour">Hours <input type="number" name="dmin" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dmin">Minute<br><small>Please, enter the duration time here</small><br>	<input type="button" name="delete"  style="background-color:red" value="Delete" onclick="eliminar_campos('+i+')"></td></tr> <tr><td colspan="2"><table id="course_taken"></table></td></tr> ');
+		i++;
+	});
+	function eliminar_campos(i){
+		var nombre_f1="#f1";
+		var num="";
+		//---
+		var num_f1=i;
+		num=num_f1.toString();
+		var f1=nombre_f1.concat(num);
+		$(""+f1+"").empty();
+
+		var nombre_f2="#f2";
+		var num="";
+		//---
+		var num_f2=i;
+		num=num_f2.toString();
+		var f2=nombre_f2.concat(num);
+		$(""+f2+"").empty();
+	};
+
+
+	
+</script>
+
+<script type="text/javascript">
+	var i=1;
+	$("#addemployment").on('click',function(event){
+		$("#employment").append('<tr id="f1'+i+'"><td align="right"><label>Work Experience:</label></td>  	<td>	<input tipe="text" name="work" title="enter the work here" placeholder="work done" required="required" id="work"><br><small>Please, enter the work done here</small></td> </tr> <tr id="f2'+i+'">  	<td align="right"><label>Duration of employment:</label></td>	<td>	<input type="number" name="dday" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dday">Days <input type="number" name="dhour" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dhour">Hours <input type="number" name="dmin" title="enter hours of duration" placeholder="0" required="required" style="width: 40px;height: 10px" id="dmin">Minute<br>	<small>Please, enter the duration time here</small><br>	<input type="button" name="Deletemploy"  style="background-color:red" value="Delete" onclick="eliminar_employ('+i+')"></td></tr> <tr><td colspan="2"><table id="add_study"></table></td>  </tr>');
+		i++;
+	});
+	function eliminar_employ(i){
+		var nombre_f1="#f1";
+		var num="";
+		//---
+		var num_f1=i;
+		num=num_f1.toString();
+		var f1=nombre_f1.concat(num);
+		$(""+f1+"").empty();
+
+		var nombre_f2="#f2";
+		var num="";
+		//---
+		var num_f2=i;
+		num=num_f2.toString();
+		var f2=nombre_f2.concat(num);
+		$(""+f2+"").empty();
+	};
+</script>
+
+
+<script type="text/javascript">
+	var i=1;
+	$("#addreferences").on('click',function(event){
+		$("#references").append('<tr id="f1'+i+'"><td align="right"><label>name and surname</label></td><td><input tipe="text" name="reference1" title="enter the name and surname here" placeholder="ejem: Zoy Paez" required="required" id="reference1"></td></tr><tr id="f2'+i+'"><td align="right"><label>Phone Number:</label></td><td><input type="text" name="phonerefe1" title="enter your phone number" placeholder="ejem: +584120000000" required="required" size="50" id="phonerefe1"><br>	<input type="button" name="Deletereferences"  style="background-color:red" value="Delete" onclick="eliminar_campos('+i+')"></td></tr> <tr><td colspan="2"><table id="add_study"></table></td></tr>');
+		i++;
+	});
+	function eliminar_campos(i){
+		var nombre_f1="#f1";
+		var num="";
+		//---
+		var num_f1=i;
+		num=num_f1.toString();
+		var f1=nombre_f1.concat(num);
+		$(""+f1+"").empty();
+
+		var nombre_f2="#f2";
+		var num="";
+		//---
+		var num_f2=i;
+		num=num_f2.toString();
+		var f2=nombre_f2.concat(num);
+		$(""+f2+"").empty();
+	};
+</script>
+
+
+<script type="text/javascript">
+	$console.log('cree funciones de scrip separadas para que no exista problemas con las variables o contadores, como cada una es una funcion (scrip) individual horientada a sus respectivos ID, asumi que el propio codigo se encargaria de interpretar cada una por separado');
+	("#num1").on('keyup',function(event){
+		var valor1=event.target.value;
+		console.log(valor1);
+	});
+</script>
