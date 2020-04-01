@@ -7,7 +7,7 @@
 	<strong>Bienvenidos.....</strong>
 	<ul>
 		<li><a href="formulario.html">Formulario</a></li>
-		<li><a href="#"></a>Modulo 1</li>
+		<li><a href="./personas/PersonasControlador.php?operacion=index">Personas</a></li>
 		<li><a href="#"></a>Modulo 2</li>
 	</ul>
 </body>
