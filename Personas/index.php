@@ -2,7 +2,6 @@
 extract($_REQUEST);
 $data=unserialize($data);
 ?><!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Lista de Categorias</title>
@@ -27,7 +26,9 @@ $data=unserialize($data);
 	<?php for ($j=1;$j <$campos; $j++) { ?>
 		<td><?=$data[$i][$j]?></td>
 <?php } ?>
-<td><a href="PersonasControlador.php?operacion=modificar&id_persona=<?=$data[$i][0]?>">Modificar</a><a href="javascript:eliminar(<?=$data[$i][0]?>)">Eliminar</a>
+<td>
+	<a href="PersonasControlador.php?operacion=modificar&id_persona=<?=$data[$i][0]?>">Modificar</a>
+	<a href="javascript:eliminar(<?=$data[$i][0]?>)">Eliminar</a>
 </td>
 <?php
 	$num++;

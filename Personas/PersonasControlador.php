@@ -25,6 +25,46 @@ class PersonasControlador
 		mysqli_close($conex);
 			header("Location: index.php?filas=".$filas."&campos=".$campos."&data=".serialize($datos));
 	}
+    public function modificar(){
+        extract($_REQUEST);
+        $db=new clasedb();
+        $conex=$db->conectar();
+        $sql="SELECT * FROM datos_personales WHERE id=".$id_persona."";
+		$res=mysqli_query($conex,$sql);
+        $data=mysqli_fetch_array($res);
+        
+        header("Location: editar.php?data=".serialize($data));
+    }
+
+    public function actualizar(){
+        extract($_REQUEST);
+        $db=new clasedb();
+        $conex=$db->conectar();
+
+        $sql="UPDATE datos_personales set 
+        nombres='$nombres',
+        apellidos='$apellidos',
+        cedula='$cedula'
+        WHERE id=$id_persona";
+       	$res=mysqli_query($conex,$sql);
+        	if ($res) {
+        		?>
+        		<script type="text/javascript">
+        			alert("REGISTRO MODIFICADO");
+        			window.location="PersonasControlador.php?operacion=index";
+        		</script>
+        		<?php
+        	}else{
+        		?>
+        		<script type="text/javascript">
+        			alert("ERROR AL MODIFICAR REGISTRO");
+        			window.location="PersonasControlador.php?operacion=index";
+        		</script>
+        		<?php
+        	}
+        $this->index();
+    }
+
 
 
 	static function controlador($operacion){
@@ -37,7 +77,7 @@ class PersonasControlador
 			$persona->registrar();
 			break;
 		case 'guardar':
-			$persona->modificar();
+			$persona->guardar();
 			break;
 		case 'modificar':
 			$persona->modificar();
@@ -60,3 +100,4 @@ class PersonasControlador
 }//funcion controlador
 }//class
 PersonasControlador::controlador($operacion);
+?>
