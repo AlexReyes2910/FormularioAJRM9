@@ -49,14 +49,14 @@ class PersonasControlador
        	$res=mysqli_query($conex,$sql);
         	if ($res) {
         		?>
-        		<script type="text/javascript">
+        		<script>
         			alert("REGISTRO MODIFICADO");
         			window.location="PersonasControlador.php?operacion=index";
         		</script>
         		<?php
         	}else{
         		?>
-        		<script type="text/javascript">
+        		<script>
         			alert("ERROR AL MODIFICAR REGISTRO");
         			window.location="PersonasControlador.php?operacion=index";
         		</script>
@@ -64,6 +64,36 @@ class PersonasControlador
         	}
         $this->index();
     }
+
+   
+    public function eliminar(){
+
+    	extract($_REQUEST);//extrayendo variables del url
+    	$db=new clasedb();
+    	$conex=$db->conectar();//conectando con la base de datos
+
+    	$sql="DELETE FROM datos_personales WHERE id=".$id_persona;
+
+		$res=mysqli_query($conex,$sql);
+		if ($res)
+		 {
+			?>
+			<script type="text/javascript">
+				alert("REGISTRO ELIMINADO");
+				window.location="PersonasControlador.php?operacion=index";
+			</script>
+			<?php
+		}else{
+			?>
+			<script type="text/javascript">
+				alert("REGISTRO NO ELIMINADO");
+				window.location="PersonasControlador.php?operacion=index";
+			</script>
+			<?php
+			}
+    }
+
+
 
 
 
@@ -90,7 +120,7 @@ class PersonasControlador
 			break;
 		default:
 			?>
-				<script type="text/javascript">
+				<script>
 					alert("No existe la ruta");
 					window.location="PersonasControlador.php?operacion=index";
 				</script>
