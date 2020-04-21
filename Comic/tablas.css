@@ -1,0 +1,77 @@
+html
+{
+font-size: 15px;
+font-family: 'calibri';
+}
+
+body
+{
+background-image: url(fondo.jpg);
+background-size: 100% 100%;
+background-attachment: fixed;
+}
+
+table
+{
+border-top: solid 0.2rem black;
+border:0px;
+background:white;
+box-shadow: 1rem 1rem 1rem black;
+text-align: center;
+margin: 1rem;
+}
+
+th
+{
+font-size: 2rem;
+background:gray;
+color: white;
+}
+
+tr
+{
+font-size: 1.2rem;
+}
+
+tr:hover
+{
+background:silver;
+}
+
+.cuadros
+{
+border:none;
+border-bottom: solid 1px ghostwhite;
+padding: .8rem;
+width: 70%;
+}
+
+.cuadros:hover
+{
+border-bottom: solid 1px ghostwhite;
+padding: .3rem;
+background:ghostwhite;
+color: black;
+font-size: 1.2rem;
+}
+
+.boton
+{
+width: 5rem;
+height: 1.5rem;
+border:none;
+background:;
+box-shadow: .3rem .3rem .3rem gray;
+}
+.boton:hover
+{
+background:darkgray;
+color: black;
+box-shadow: .3rem .3rem .3rem black;
+text-shadow: .3rem .3rem .3rem white;
+}
+
+.talla
+{
+width: 70%;
+}

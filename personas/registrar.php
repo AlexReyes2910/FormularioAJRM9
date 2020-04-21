@@ -4,7 +4,7 @@
 	<title>Formulario</title>
 </head>
 <body>
-	<form action="recibir_formulario.php" method="post" name="formulario">
+	<form action="PersonasControlador.php" method="post" name="formulario">
 		<table>
 			<tr>
 				<td colspan="2">Formlario</td>
@@ -19,7 +19,10 @@
 				<td>cedula:</td><td><input type="number" name="cedula" id="cedula" placeholder="Ej: 12345678" title="Ingrese sus cedula"></td>
 			</tr>
 			<tr>
-				<td><input type="submit" name="enviar" value="Enviar"></td>
+				<td>
+					<input type="hidden" name="operacion" value="guardar">
+					<input type="submit" name="enviar" value="Guardar"></td>
+			</tr>
 			</tr>
 		</table>
 	</form>

@@ -1,0 +1,55 @@
+body
+{
+background-image:  url(fondo-index.jpg);
+background-size: 100% 100%;
+background-attachment: fixed;
+}
+
+.titulo
+{
+position: absolute;
+top:20%;
+left: 22%;
+color: white;
+font-size: 80px;
+width: 60%;
+font-family: 'calibri';
+}
+
+.opciones
+{
+position: absolute;
+top:40%;
+left: 28%;
+font-size: 30px;
+font-family: 'calibri';
+}
+
+.boton
+{
+width: 5rem;
+height: 1.5rem;
+border:none;
+background:;
+box-shadow: .3rem .3rem .3rem gray;
+}
+.boton:hover
+{
+background:darkgray;
+color: black;
+box-shadow: .3rem .3rem .3rem black;
+text-shadow: .3rem .3rem .3rem white;
+}
+
+a
+{
+text-decoration: none;
+color:white;
+}
+
+a:hover
+{
+font-size: 35px;
+color:ghostwhite; 
+text-shadow: 5px 5px 5px gold;
+}
