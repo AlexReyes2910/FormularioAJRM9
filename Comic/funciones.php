@@ -9,7 +9,7 @@ class funcioneslista
 	extract($_REQUEST);
 	$db=new conexion();
 	$con=$db->conectar();
-	$sql="INSERT INTO comic VALUES(NULL,'".$personaje."','".$poder."','".$habilidades."','".$tipo."','".$compania."','".$creador."')";
+	$sql="INSERT INTO comic VALUES(NULL,'".$personaje."','".$poder."','".$habilidad."','".$tipo."','".$compania."','".$creador."')";
 	$resultado=mysqli_query($con,$sql);
 	if ($resultado)
 		 {
@@ -38,7 +38,7 @@ class funcioneslista
 		$res=mysqli_query($conex,$sql);
         $data=mysqli_fetch_array($res);
 
-        header("Location: prueba.php?data=".serialize($data));
+        header("Location: modificar.php?data=".serialize($data));
 	}
 
 	public function actualizar(){
