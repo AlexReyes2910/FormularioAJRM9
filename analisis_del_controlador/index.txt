@@ -1,0 +1,49 @@
+linea 8: inicia una funcion publica llamada index, sin introducir paramatros en ella.
+
+linea 9: se instancia la clase llamada clasedb dentro de la variable $db cuya finalidad es proporcionar acceso a los datos
+en la base de datos.
+
+linea 10: se crea una nueva variable que hara uso de la funcion encargada de conectar la base de datos introduciendo datos
+usuario, contraseña y nombre de la base de datos solicidada
+
+linea 12: Se hace la consulta hacia la base de datos ubicando la tabla, esta variable($sql) permitira la consulta desde 
+otras variables y asi poder extraer datos, esta hace uso de las dos variables anteriores para funcionar de forma correcta.
+
+linea 14: la variable $res, extrae los datos necesarios realizados en la consulta determinada por el comando mysqli_query,
+devolviendo una respuesta temporal que permite ubicar los datos almacenados, de fallar la cunsulta dara como respuesta un 
+error.
+
+Linea 15: esta nueva variable indicara el numero de campos o columnas dentro de la tabla, almacena esta informacion gracias
+ a la consulta previamente elaborada con $res.
+
+linea 16: esta funcion almacena el numero de filas en la tabla, estan continene los datos almacenados.
+
+linea 17: se inicializa la variable $i con el valor 0, nos servira para un arreglo proximo
+
+linea 18: Se crea un arreglo unidimencional
+
+linea 20: se inicia un ciclo while (mientras) la condicion es que mientras se sigan asignando los registros a las filas este 
+ciclo continuara hasta haber finalizado o detectado un valor false. seguido abre la llave esperando nuevas ordenes.
+
+linea 21: se inicia un bucle determinado a que $j es igual a = y mientras sea inferior a $campos ira en aumento, se abre 
+otra vez llaves para introducir una nueva orden
+
+linea 22: tenemos un arreglo bidimencional con un arreglo unidimencional al que se estara almacenando haciendo un conteo de 
+campos y filas donde al llegar al ultimo campo en la fila salta a la siguiente 
+ejemplo:
+1-1,1-2,1-3;
+2-1,2-2,2-3;
+3-1,3-2,3-3;
+
+linea 23: se cierra el bucle
+
+linea 24: se inicia un contador vara la variable $i
+
+linea 25 cierre del ciclo while
+
+linea 26:se cierra la conexion con el servidor de la base de datos.
+
+linea 28: envia los datos a un archivo incluyendo las filas, campos y arreglos utilizados, serializando la informacion en una 
+variable ($datos) para luego ser deserializados en el archivo destino
+
+linea 29: finaliza la funcion index
