@@ -1,0 +1,42 @@
+Línea 82: Se inicializa la función modificar esta cargara los registros de las tablas y re direccionara a otra página donde serán visibles al usuario
+Línea 83: se extraen todos los datos enviados de una consulta 
+Línea 84: se instancia la clasedb logrando usarla como variable
+Línea 85: se crea una nueva variable almacenando la conexión a la db
+Línea 87: Se crea una variable SQL almacenando la orden que se dará para interactuar con la base de datos
+Línea 88: se hace la consulta donde se conecta la base de datos con la  consulta de datos
+Línea 89: crea una variable y gurda allí los valores de la consulta
+Línea 91: Redirección al usuario a la página y envía los datos serializados para su uso posterior
+__________________________________________________________________________________________________
+Línea 93: inicializa la función actualizar, esta se encarga de tomar los nuevos datos ingresados por el usuario y actualizar los registros dentro de la base de datos
+Línea 95: extrae los datos enviados de una consulta mediante el método post
+Línea 96: se instancia la clasedb logrando usarla como variable
+Línea 97: se crea una nueva variable almacenando la conexión a la db
+Línea 99: Se crea una variable SQL almacenando la orden que se dará para interactuar con la base de datos, esta se usara para comparar si existen datos iguales en la base de datos
+Línea 101: crea una variable que realice la unión entre la conexión y la consulta de la base de datos.
+Línea 102: se crea una nueva variable que almacena el total de coincidencias en la base de datos
+Línea 103: inicializa un comparador if con la condición de que $cant sea mayor a 0, se puede entender que si existen coincidencia con los datos enviados la actualización será negativa.
+Línea 104: cierra el código php
+Línea 105: inicia un script tipo javascript
+Línea 106: indica el usuario que la cedula ya existe
+Línea 107: redirección al usuario a la pantalla donde se muestran todos los resultados.
+Línea 108: cierra el script
+Línea 109: reabre el código php
+Línea 110: cierra el primer condicional y abre el caso opuesto
+Línea 111: crea una variable SQL  la cual contiene la orden para actualizar los datos en la base de datos con los que han sido modificados por el usuario
+Línea 113: almacena la respuesta de la conexión entre la base de datos y la orden realizada
+Línea 114: abre un segundo condicional para indicar si la respuesta fue positiva y actualizo los datos en sistema
+Línea 115: cierra el código php para dar paso a los mensajes con script
+Línea 116: abre un script de tipo javascript
+Línea 117: da una alerta al usuario indicando que la modificación fue positiva
+Línea 118: redirección al usuario a la pantalla de consulta de datos general o índex
+Línea 119: cierra el script
+Línea 120: vuelve a abrir el código php para continuar con las funciones
+Línea 121: cierra el condicional if y prosigue con la respuesta opuesta a esta
+Línea 122: cierra el código php para volver a introducir mensajes en pantalla con el script
+Línea 123: inicia un nuevo scrip
+Línea 124: indica una alerta en pantalla indicando que la actualización no fue posible
+Línea 125: redirección al usuario al índex
+Línea 126: cierra el script 
+Línea 127: vuelve a abrir el código php para finalizar las acciones en la función
+Línea 128, 130 y 131: son para finalizas el else opuesto a la modificación exitosa, el segundo para finalizar el else que indicaba que la cedula no existía en sistema y el último para cerrar la función
+
