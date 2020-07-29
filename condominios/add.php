@@ -45,7 +45,8 @@ $result=mysqli_query($conex,$sql);
 if($result)
 {	echo $i.') registro ingresado exitosamente<br>';
 }else{
-	echo $i.') error al ingresar registros<br>';
+	echo $i.') error al ingresar registros (reintentando)<br>';
+	$i--;
 }
 }
 echo '<a href="index.php">Volver</a>';
